@@ -1,0 +1,44 @@
+{
+    "name": "Dual Player",
+    "options": [{
+        "title": "Playlist Left",
+        "name": "playlist_1",
+        "type": "list",
+        "itemname": "Item",
+        "items": [{
+            "title": "Asset",
+            "ui_width": 8,
+            "name": "asset",
+            "type": "resource",
+            "valid": ["image", "video"],
+            "default": "empty.png"
+        }, {
+            "title": "Play time (in seconds)",
+            "ui_width": 4,
+            "name": "duration",
+            "type": "duration",
+            "hint": "How long should this item be displayed on screen. For videos, use their duration",
+            "default": 5
+        }]
+    }, {
+        "title": "Playlist Right",
+        "name": "playlist_2",
+        "type": "list",
+        "itemname": "Item",
+        "items": [{
+            "title": "Asset",
+            "ui_width": 8,
+            "name": "asset",
+            "type": "resource",
+            "valid": ["image", "video"],
+            "default": "empty.png"
+        }, {
+            "title": "Play time (in seconds)",
+            "ui_width": 4,
+            "name": "duration",
+            "type": "duration",
+            "hint": "How long should this item be displayed on screen. For videos, use their duration",
+            "default": 5
+        }]
+    }]
+}
