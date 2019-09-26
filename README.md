@@ -1,5 +1,7 @@
 # Play two playlists side by side
 
+[![Import](https://cdn.infobeamer.com/s/img/import.png)](https://info-beamer.com/use?url=https://github.com/info-beamer/package-dual-player)
+
 This is a small example package showing how to build a simple player
 that displays two independant playlists side by side. Should be easy
 to change if you need other layouts.
