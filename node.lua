@@ -2,7 +2,7 @@ gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
 util.no_globals()
 
-local myconfig = {}
+local myconfig
 
 local function image(file, duration)
     local img, ends
@@ -177,7 +177,7 @@ local st = util.screen_transform(0)
 st()
 
 function node.render()
-    print myconfig
+    print(myconfig)
     -- gl.clear(0,0,0,1)
     -- local st = util.screen_transform(myconfig.rotation)
     -- st()
