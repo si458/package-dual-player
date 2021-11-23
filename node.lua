@@ -151,7 +151,7 @@ local playlist_1 = Scheduler()
 local playlist_2 = Scheduler()
 
 util.json_watch("config.json", function(config)
-    print "config.json"
+    print "my config.json changed"
     playlist_1.update(config.playlist_1)
     playlist_2.update(config.playlist_2)
 end)
