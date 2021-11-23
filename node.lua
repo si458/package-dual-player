@@ -171,6 +171,7 @@ local runner_2 = Runner(playlist_2, {
 })
 
 function node.render()
+    print config.screen_rotation
     -- gl.clear(0,0,0,1)
     -- local st = util.screen_transform(myconfig.rotation)
     -- st()
