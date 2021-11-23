@@ -177,7 +177,7 @@ local st = util.screen_transform(0)
 st()
 
 function node.render()
-    print(myconfig)
+    print(myconfig.screen_resolution)
     -- gl.clear(0,0,0,1)
     -- local st = util.screen_transform(myconfig.rotation)
     -- st()
