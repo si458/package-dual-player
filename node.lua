@@ -174,10 +174,9 @@ local runner_2 = Runner(playlist_2, {
 })
 
 function node.render()
+    gl.clear(0,0,0,1)
     local st = util.screen_transform(myconfig.rotation)
     st()
-    -- gl.clear(0,0,0,1)
-    -- local st = util.screen_transform(config.rotation)
     print "node.render"
     runner_1.tick()
     runner_2.tick()
