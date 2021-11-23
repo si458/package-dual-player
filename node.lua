@@ -2,7 +2,7 @@ gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
 util.no_globals()
 
--- local st
+local st
 
 local function image(file, duration)
     local img, ends
