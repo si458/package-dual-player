@@ -2,6 +2,8 @@ gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
 util.no_globals()
 
+local myconfig
+
 local function image(file, duration)
     local img, ends
     return {
