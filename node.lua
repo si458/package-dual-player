@@ -2,8 +2,6 @@ gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
 util.no_globals()
 
-local st = util.screen_transform(0)
-
 local myconfig
 
 local function image(file, duration)
@@ -155,8 +153,6 @@ local playlist_1 = Scheduler()
 local playlist_2 = Scheduler()
 
 util.json_watch("config.json", function(config)
-    myconfig = config.rotation
-    st = util.screen_transform(config.rotation)
     playlist_1.update(config.playlist_1)
     playlist_2.update(config.playlist_2)
 end)
@@ -177,6 +173,7 @@ local runner_2 = Runner(playlist_2, {
 
 function node.render()
     gr.clear(0,0,0,1)
+    local st = util.screen_transform(config.rotation)
     st()
     runner_1.tick()
     runner_2.tick()
