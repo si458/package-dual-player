@@ -176,7 +176,7 @@ local runner_2 = Runner(playlist_2, {
 function node.render()
     gr.clear(0,0,0,1)
     -- local st = util.screen_transform(config.rotation)
-    print "node.render"
+    -- print "node.render"
     -- st()
     runner_1.tick()
     runner_2.tick()
