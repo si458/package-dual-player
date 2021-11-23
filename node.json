@@ -1,8 +1,8 @@
 {
     "name": "Dual Player",
     "options": [{
-        "title": "Display rotation",
-        "name": "rotation",
+        "title": "Screen rotation",
+        "name": "screen_rotation",
         "type": "select",
         "options": [
             [0, "0"],
