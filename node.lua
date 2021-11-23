@@ -152,6 +152,7 @@ local playlist_2 = Scheduler()
 
 util.json_watch("config.json", function(config)
     print "my config.json changed"
+    myconfig = config
     playlist_1.update(config.playlist_1)
     playlist_2.update(config.playlist_2)
 end)
@@ -170,8 +171,11 @@ local runner_2 = Runner(playlist_2, {
     y2 = HEIGHT,
 })
 
+local st = util.screen_transform(0)
+st()
+
 function node.render()
-    print config.screen_rotation
+    print myconfig.screen_rotation
     -- gl.clear(0,0,0,1)
     -- local st = util.screen_transform(myconfig.rotation)
     -- st()
